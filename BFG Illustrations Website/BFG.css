@@ -1,0 +1,259 @@
+body{
+    background:#6600ff; /* The colour of the background */
+    color: white; /* The colour of the text */
+    font-size: 22px; /* The font size that is used */
+    margin: 0;
+    display: block;
+}
+
+/* Div that holds everything within the navigation bar */
+.topnav{
+    background:#000080;
+    font-family: papyrus; /* The font style that is used */
+    font-size: 12px; 
+    display: flex;
+    padding: 10px 20%; /* 10 pixels of padding vertically and 20% of padding horizontally */
+    width: 60%; /* The navigation bar is made to be 60% the width of the web page */
+    margin: auto; /* The navigation bar is centred to the middle of the web page */
+}
+
+/* Div that positions the logo */
+#logo{
+    display: flex;
+    font-size: 8px;
+    width: 60%;
+    margin: auto;
+    justify-content: flex-start;
+}
+
+/* Links for the logo */
+#logo a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Div that positions the navigation buttons */
+.topnav .topnavmenu{
+    display: flex;
+    margin-top: 15px;
+    margin-right: 5px;
+    padding-bottom: 20px;
+}
+
+/* Links for the navigation buttons */
+.topnav .topnavmenu a{
+    padding: 10px 0;
+    background: #cfe2f3;
+    text-decoration: none;
+    color: black;
+    width: 90px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Navigation buttons change colour when the mouse hovers over the buttons */
+.topnav .topnavmenu a:hover{
+    background: greenyellow;
+}
+
+/* Design of the dropdown button (About us button) */
+.dropbtn {
+    background: #cfe2f3;
+    color: black;
+    font-family: papyrus;
+    width: 90px;
+    margin: 10px;
+    font-size: 12px;
+    border: none;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background: greenyellow;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: #000080;
+    min-width: 120px;
+    margin-top: 60px;
+    margin-right: 430px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  /* Dropdown menu icon for mobile and tablet users isn't displayed */
+.menuIcon{
+    display: none;
+}
+
+/* Size and font of page header */
+h2{
+    font-size: 36px;
+    font-family: papyrus;
+}
+
+/* Design and position of the content box */
+section{
+    background: white;
+    color: black;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+/* Position and size of images in the content box */
+section img{
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+#formInfo{
+    font-size: 14px;
+    margin: 10px 10%;
+}
+
+/* Size and position of forename text box */
+#forename{
+   width: 80%; 
+   margin: 0 10%;
+}
+
+/* Size and position of surname text box */
+#surname{
+    width: 80%;
+    margin: 10px 10%;
+}
+
+/* Size and position of dream text box */
+#dream{
+    width: 80%;
+    height: 200px;
+    margin: 5px 10%;
+}
+
+/* Size and position of submit button */
+#submit{
+    width: 20%;
+    margin: 5px 40%;
+}
+
+/* Size, position and colour of footer */
+footer{
+    background: grey;
+    height: 250px;
+    width: 100%;
+    margin-top: 30%;
+    padding-top: 50px;
+}
+
+/* Position of details in the footer */
+.footerDetails{
+    margin-left: 20%;
+}
+
+/* Size, position and design of footer logo */
+#footerLogo{
+    display: flex;
+    font-size: 8px;
+    font-family: papyrus;
+    margin-left: 60%;
+    margin-top: -220px;
+}
+
+/* Changes the layout of the screen when the width of the webpage is less than 1040px */
+@media only screen and (max-width: 1040px) {
+    /* Logo position */
+    #logo{
+        display: flex;
+        margin-left: -20%;
+    }
+
+    /* Dropdown icon size and position */
+    .menuIcon{
+        background: #000080;
+        display: flex;
+        margin-left: 85%;
+        margin-top: -60px;
+        font-size: 50px;
+        cursor: pointer;
+    }
+
+    /* About us button size */
+    .dropbtn{
+        width: 80%;
+        padding: 10px 0;
+    }
+ 
+    /* Dropdown navigation buttons aren't displayed by default */
+    /* Dropdown navigation buttons size and position */
+    .topnav .topnavmenu{
+        display: none;
+        background: #000080;
+        position: absolute;
+        flex-direction: column;
+        width: 15%;
+        height: 300px;
+        right: 3%;
+        top: 6vh;
+        align-items: center;
+        margin-bottom: 10px;
+        padding-bottom: 30px;
+    }
+ 
+    /* Aligns the text of each navigation button to the centre */
+    .topnav .topnavmenu a{
+        width: 80%;
+        text-align: center;
+    }
+ 
+    /* The navigation buttons are displayed when the dropdown menu is being hovered over */
+    .menuIcon:hover .topnav .topnavmenu{
+        display: flex;
+    }
+ 
+    /* About us dropdown content position */
+    .dropdown-content{
+        top: -60px;
+        left: -115px;
+    }
+ 
+    /* Content box size and position */
+    section{
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    /* Footer contact details position */
+    .footerDetails{
+        width: 80%;
+        margin: auto;
+    }
+
+    /* Footer logo position */
+    #footerLogo{
+        margin-left: 80%;
+    }
+}

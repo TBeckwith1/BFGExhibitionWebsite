@@ -1,0 +1,101 @@
+body{
+    background:#6600ff;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    display: block;
+}
+
+.topnav{
+    background:#000080;
+    color: white;
+    font-family: papyrus;
+    font-size: 12px;
+    display: flex;
+    padding: 10px 20%;
+    width: 60%;
+    margin: auto;
+}
+
+#logo{
+    display: flex;
+    font-size: 10px;
+    width: 60%;
+    margin: auto;
+    justify-content: flex-start;
+}
+
+#logo a{
+    color: white;
+    text-decoration: none;
+}
+
+.topnav .topnavmenu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-right: 5px;
+    padding-bottom: 20px;
+}
+
+.topnav .topnavmenu a{
+    padding: 10px 0;
+    background-color: #cfe2f3;
+    text-decoration: none;
+    color: black;
+    width: 120px;
+    margin: 10px;
+    text-align: center;
+}
+
+.topnav .topnavmenu a:hover{
+    background: greenyellow;
+}
+
+.topnav ul{
+    display: flex;
+}
+
+.topnav ul li{
+    list-style: none;
+    position: relative;
+}
+
+.topnav ul li a{
+    display: block;
+}
+
+.topnav ul li ul{
+    background: #000080;
+    display: none;
+    position: absolute;
+}
+
+.topnav ul li ul li{
+    margin-left: -40px;
+    padding-top: 5px;
+}
+
+.topnav ul li:hover ul{
+    display: block;
+}
+
+h2{
+    font-size: 30px;
+}
+
+section{
+    background: white;
+    color: black;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+section img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
